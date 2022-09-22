@@ -1,0 +1,39 @@
+.header h1{
+    
+    background-color:rgb(22, 22, 95); 
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+}
+.A2 {
+    margin-top: -17px;
+    background-color: rgb(200, 87, 87);
+}
+.table{
+    
+    border: 10px;
+    text-align: center;
+    
+}
+.table th:hover{
+    
+    background-color:green;
+    color: white;
+
+}
+body{
+    background:  url("images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.table th{
+    background-color:grey
+    
+}
+.A2_containt{
+    width: 40%;
+   
+}

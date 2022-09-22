@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1,p{
+        color: black;
+        background-color: coral;
+        font-style: italic;
+    }
+    </style>
+
+
+    <!-- <title>Home page</title> -->
+    <title>{{title}}</title>
+</head>
+<body>
+    <div>
+    <!-- <h1> Welcome to home page </h1> -->
+    <h1>{{H_tag}}</h1>
+    <p>{{P_tag}}</p>
+    <!-- <p>we create html render so firstly we impot django.shortcut from import and render function take two parameter first request and which page create in templets .....!</p> -->
+    </div>
+
+    {% for i in clist %}
+    <div> {{i}}</div>
+    {% endfor %}
+     
+
+    <br>
+    <table border="1" cellpadding="10">
+       
+        <tr>
+            <th>Name</th>
+            <th>phone</th>
+        </tr>
+        {% for i in stu_list %}
+        <tr>
+              <td>{{i.name}}</td>
+              <td>{{i.phone}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+
+    {% for i in numbers %}
+    {% if i >= 20 %}
+    <div>{{i}}</div>
+    {% endif %}
+    {% endfor %}
+
+
+</body>
+</html>
